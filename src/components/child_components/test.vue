@@ -1,22 +1,15 @@
 <template>
-  <div class="homepage">
+  <div class="test">
     {{msg}}
-    <test/>
   </div>
 </template>
 
 <script>
-    import test from "./child_components/test.vue"
-  import "swiper/dist/css/swiper.css"
-  import Swiper from "swiper/dist/js/swiper.js"
   export default {
-    name: 'homepage',
-    components:{
-        test,
-    },
+    name: 'test',
     data() {
         return{
-            msg:"我是主页"
+            msg:"子组件"
         }
     },
     mounted() {
