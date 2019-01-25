@@ -1,6 +1,5 @@
 <template>
   <div class="hot">
-    <!-- swiper轮播 -->
       <div class="hot-box-title">
         <h2>热销产品</h2>
         <span>></span>
@@ -9,8 +8,6 @@
 </template>
 
 <script>
-import "swiper/dist/css/swiper.css";
-import Swiper from "swiper/dist/js/swiper.js";
 export default {
   name: "hot",
   data() {
