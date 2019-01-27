@@ -1,21 +1,36 @@
 <template>
   <div class="homepage">
-    {{msg}}
-    <test />
-    <homepage_ad/>
+    <hammer_head/>
+    <spac/>
+    <homepage_ad />
+    <spac_small/>
+    <pro_title/>
+    <hot/>
+    <picture_ad/>
+    <card/>
   </div>
 </template>
 
 <script>
   import homepage_ad from "./child_components/homepage_ad.vue"
-  import test from "./child_components/test.vue"
-  import "swiper/dist/css/swiper.css"
-  import Swiper from "swiper/dist/js/swiper.js"
+  import hammer_head from "./hammer_head.vue"
+  import spac from "./child_components/spac.vue"
+  import picture_ad from "./child_components/picture_ad.vue"
+  import spac_small from "./child_components/spac_small.vue"
+  import card from "./child_components/card.vue"
+  import hot from './child_components/hot.vue'
+  import pro_title from './child_components/pro_title.vue'
   export default {
     name: 'homepage',
     components: {
-      test,
       homepage_ad,
+      hammer_head,
+      spac,
+      picture_ad,
+      spac_small,
+      card,
+      hot,
+      pro_title,
     },
     data() {
       return {
