@@ -32,6 +32,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   .head {
+    z-index: 10;
     width: 100%;
     height: 50px;
     background-color: rgb(27, 27, 27);

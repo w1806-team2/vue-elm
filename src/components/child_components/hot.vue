@@ -2,7 +2,7 @@
   <div class="hot">
     <!-- swiper轮播 -->
     <div class="hot-box">
-      <div class="swiper-container hot">
+      <div class="swiper-container hot_swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="hot-box-box">
@@ -87,12 +87,12 @@ export default {
     };
   },
   mounted() {
-    var swiper = new Swiper(".hot", {
+    var swiper_hot = new Swiper(".hot_swiper", {
       // autoplay: true, //可选选项，自动滑动
       slidesPerView: 3,
       scrollbar: {
         el: ".swiper-scrollbar",
-        hide: true,
+        hide: false,
       }
     });
   },

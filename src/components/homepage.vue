@@ -8,6 +8,7 @@
     <hot/>
     <picture_ad/>
     <card/>
+    <picture_list/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@
   import card from "./child_components/card.vue"
   import hot from './child_components/hot.vue'
   import pro_title from './child_components/pro_title.vue'
+  import picture_list from './child_components/picture-list.vue'
   export default {
     name: 'homepage',
     components: {
@@ -31,6 +33,7 @@
       card,
       hot,
       pro_title,
+      picture_list,
     },
     data() {
       return {
@@ -49,5 +52,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
+  
 </style>

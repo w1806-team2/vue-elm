@@ -66,7 +66,6 @@
     background-color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0px;
-
     .el-col {
       text-align: center;
       div{

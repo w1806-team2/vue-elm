@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "picture",
+  name: "picture_list",
   data() {
     return {
       msg: "子组件"
@@ -45,6 +45,7 @@ export default {
   margin: 0;
 }
 .picture {
+  margin-bottom: 54px;
   width: 100%;
   .pic {
     box-shadow: 0 5px 13px rgba(0,0,0,.1);

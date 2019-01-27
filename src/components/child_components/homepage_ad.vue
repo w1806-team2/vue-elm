@@ -20,14 +20,14 @@
       }
     },
     mounted() {
-      var mySwiper = new Swiper('.homepage_ad', {
+      var mySwiper_ad = new Swiper('.homepage_ad', {
         autoplay: true, //可选选项，自动滑动
         loop: true,
         pagination: {
           el: '.swiper-pagination',
-          clickable :true,
+          clickable: true,
           bulletActiveClass: 'homepage-ad-bullet-active',
-        }
+        },
       })
     },
     created() {
@@ -43,8 +43,10 @@
     width: 94%;
     padding-top: 15px;
   }
-  .homepage-ad-bullet-active{
+
+  .homepage-ad-bullet-active {
     background: white !important;
     opacity: 1;
   }
+
 </style>
