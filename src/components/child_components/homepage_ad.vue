@@ -1,8 +1,9 @@
 <template>
-  <div class="swiper-container">
+  <div class="swiper-container homepage_ad">
     <div class="swiper-wrapper">
       <div v-for="item in ad_src" :key="item.id" class="swiper-slide"><img :src=item width="100%"></div>
     </div>
+    <div class="swiper-pagination"></div>
   </div>
 </template>
 
@@ -19,9 +20,14 @@
       }
     },
     mounted() {
-      var mySwiper = new Swiper('.swiper-container', {
+      var mySwiper = new Swiper('.homepage_ad', {
         autoplay: true, //可选选项，自动滑动
-        loop : true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable :true,
+          bulletActiveClass: 'homepage-ad-bullet-active',
+        }
       })
     },
     created() {
@@ -32,8 +38,13 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-    .swiper-container{
-        width: 94%;
-    }
+<style lang="scss">
+  .swiper-container {
+    width: 94%;
+    padding-top: 15px;
+  }
+  .homepage-ad-bullet-active{
+    background: white !important;
+    opacity: 1;
+  }
 </style>
