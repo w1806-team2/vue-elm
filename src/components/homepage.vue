@@ -7,7 +7,7 @@
     <pro_title/>
     <hot/>
     <picture_ad/>
-    <card/>
+    <card item_type="phone"></card>
     <picture_list/>
   </div>
 </template>
