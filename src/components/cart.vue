@@ -1,17 +1,17 @@
 <template>
   <div class="cart">
-    <hammer_head />
+    <common_head page_title="购物车"></common_head>
     <spac/>
   </div>
 </template>
 
 <script>
-  import hammer_head from "./hammer_head.vue"
+  import common_head from "./common_head.vue"
   import spac from "./child_components/spac.vue"
   export default {
     name: 'cart',
     components:{
-      hammer_head,
+      common_head,
       spac,
     },
     data() {

@@ -1,17 +1,17 @@
 <template>
   <div class="classify">
-    <hammer_head/>
+    <common_head page_title="分类"></common_head>
     <spac/>
   </div>
 </template>
 
 <script>
-  import hammer_head from "./hammer_head.vue"
+  import common_head from "./common_head.vue"
   import spac from "./child_components/spac.vue"
   export default {
     name: 'classify',
     components:{
-      hammer_head,
+      common_head,
       spac,
     },
     data() {

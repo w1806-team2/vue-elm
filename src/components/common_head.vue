@@ -1,18 +1,13 @@
 <template>
   <div class="head">
-    <el-col :span="13" :offset="4">
-      <el-input placeholder="请输入搜索内容" prefix-icon="el-icon-search" clearable>
-      </el-input>
-    </el-col>
-    <el-col :span="2" :offset="1">
-      <img src="../../static/image/ico/searth.png" alt="" width="80%">
-    </el-col>
+    <h1 class="title">{{page_title}}</h1>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'hammer_head',
+    props: ["page_title"],
+    name: 'common_head',
     data() {
       return {
 
@@ -40,11 +35,12 @@
     top: 0px;
     display: flex;
     align-items: center;
-    .el-col{
-      img{
-        margin-top: 3px;
-      }
-    }
+    justify-content: center;
+  }
+
+  .title {
+    color: white;
+    font-size: 18px;
   }
 
 </style>

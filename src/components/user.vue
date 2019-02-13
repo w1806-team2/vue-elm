@@ -1,17 +1,17 @@
 <template>
   <div class="user">
-    <hammer_head />
+    <common_head page_title="个人中心"></common_head>
     <spac/>
   </div>
 </template>
 
 <script>
-  import hammer_head from "./hammer_head.vue"
+  import common_head from "./common_head.vue"
   import spac from "./child_components/spac.vue"
   export default {
     name: 'user',
     components:{
-      hammer_head,
+      common_head,
       spac,
     },
     data() {

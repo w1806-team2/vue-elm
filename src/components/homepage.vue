@@ -4,10 +4,14 @@
     <spac/>
     <homepage_ad />
     <spac_small/>
-    <pro_title/>
+    <pro_title title_words="热销产品"></pro_title>
     <hot/>
     <picture_ad/>
+    <pro_title title_words="坚果系列手机"></pro_title>
     <card item_type="phone"></card>
+    <pro_title title_words="坚果“足迹”系列"></pro_title>
+    <pro_title title_words="官方配件"></pro_title>
+    <card item_type="access"></card>
     <picture_list/>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="hot">
       <div class="hot-box-title">
-        <h2>热销产品</h2>
+        <h2>{{title_words}}</h2>
         <span>></span>
       </div>
   </div>
@@ -9,7 +9,8 @@
 
 <script>
 export default {
-  name: "hot",
+  props: ["title_words"],
+  name: "hot_title",
   data() {
     return {
       msg: "子组件"
